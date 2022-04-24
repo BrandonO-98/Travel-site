@@ -7,12 +7,9 @@ import "./Navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  function toggleClick() {
-    setClick((prevState) => !prevState);
-  }
-  function closeMobileMenu() {
-    setClick((prevState) => false);
-  }
+  const toggleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
   const [button, setButton] = useState(true);
   function showButton() {
     if (window.innerWidth <= 960) {
@@ -31,15 +28,19 @@ function Navbar() {
     <nav className='navbar'>
       <div className='navbar-container'>
         <Link to='/' className='navbar-logo'>
-          Kazoo Travel <FontAwesomeIcon icon={faCompass} />
+          <FontAwesomeIcon icon={faCompass} className='facompass' />
+          Kazoo Travel
         </Link>
         <div className='menu-icon' onClick={toggleClick}>
-          <FontAwesomeIcon icon={click ? faTimes : faBars} />
+          <FontAwesomeIcon
+            className='fatimesbars'
+            icon={click ? faTimes : faBars}
+          />
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className='nav-item'>
             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-              home
+              Home
             </Link>
           </li>
           <li className='nav-item'>
