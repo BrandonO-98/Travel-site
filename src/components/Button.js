@@ -6,7 +6,7 @@ const STYLES = ["btn--p", "btn--s"];
 const SIZES = ["btn--med", "btn--lar"];
 
 function Button(obj) {
-  const {input, type, onClick, buttonStyle, buttonSize} = obj;
+  const {input, inputIcon, type, onClick, buttonStyle, buttonSize} = obj;
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
@@ -19,7 +19,7 @@ function Button(obj) {
         onClick={onClick}
         type={type}
       >
-        {input}
+        {input} {inputIcon}
       </button>
     </Link>
   );

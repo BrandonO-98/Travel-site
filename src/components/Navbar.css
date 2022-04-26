@@ -1,6 +1,7 @@
 :root {
   --mainHeight: 80px;
 }
+/* when defining stick you need to include top as a reference */
 .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   height: 80px;
@@ -10,6 +11,7 @@
   font-size: 1.2rem;
   position: sticky;
   z-index: 999;
+  top: 0;
 }
 
 .navbar-container {
@@ -52,7 +54,7 @@
 }
 
 .fatimesbars {
-  height: 45px;
+  height: 35px;
   color: #fff;
 }
 
@@ -103,7 +105,7 @@
     /* transition into these properties */
     background: #242222;
     left: 0;
-    opacity: 1;
+    opacity: 0.96;
     transition: all 0.5s ease;
     z-index: 1;
   }
