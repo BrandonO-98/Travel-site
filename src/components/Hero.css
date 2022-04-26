@@ -26,3 +26,18 @@ video {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.facircleplay {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-btns {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

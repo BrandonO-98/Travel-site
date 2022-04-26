@@ -1,0 +1,30 @@
+.card-container {
+  z-index: 2;
+  width: 280px;
+  margin: 15px;
+  border-radius: 10px;
+  border: solid 1.2px;
+  overflow: hidden;
+}
+
+img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.caption-oncard {
+  background-color: rgb(78, 78, 250);
+  display: flex;
+  position: relative;
+  top: -40px;
+  left: 190px;
+  color: white;
+  width: 80px;
+  justify-content: center;
+  border-radius: 10px;
+}
+.caption-belowcard {
+  text-align: center;
+  margin: 10px;
+}
