@@ -10,7 +10,9 @@ function Home() {
   return (
     <div className='home-container'>
       <Hero />
-      <div className='cards-container'> {cardElement}</div>
+      <div className='cards-container-container'>
+        <div className='cards-container'> {cardElement}</div>
+      </div>
     </div>
   );
 }

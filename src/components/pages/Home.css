@@ -1,20 +1,26 @@
+.cards-container-container {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
 .cards-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  background-image: url("/public/images/img-home.jpg");
-  opacity: 1;
   padding: 100px 20px;
   height: 900px;
-  width: 100%;
+  width: 1050px;
   justify-items: center;
-  grid-gap: 40px 100px;
+  justify-content: center;
+  grid-gap: 40px 10px;
 }
 
 @media screen and (max-width: 960px) {
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
     height: auto;
-    justify-items: center;
+    width: 800px;
   }
 }
 
