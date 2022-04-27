@@ -3,8 +3,10 @@
   width: 280px;
   margin: 15px;
   border-radius: 10px;
-  border: solid 1.2px;
+  /* border: solid 1.2px; */
   overflow: hidden;
+  -webkit-box-shadow: 8px 7px 24px -1px #000000;
+  box-shadow: 8px 7px 24px -1px #000000;
 }
 
 img {
@@ -27,4 +29,23 @@ img {
 .caption-belowcard {
   text-align: center;
   margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card4,
+.card5 {
+  grid-column: span 1;
+  justify-self: center;
+}
+
+@media screen and (max-width: 960px) {
+  .card-container:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container:last-child {
+    grid-column: span 1;
+  }
 }

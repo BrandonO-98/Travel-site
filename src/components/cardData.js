@@ -18,4 +18,16 @@ export default [
     captionOnImg: "Adventure",
     captionBottom: "Explore the hidden waterfalls of Guyana",
   },
+  {
+    id: 4,
+    img: "img-8.jpg",
+    captionOnImg: "Mystery",
+    captionBottom: "Traverse the Saharan desert with a trained tour guide",
+  },
+  {
+    id: 5,
+    img: "img-3.jpg",
+    captionOnImg: "Mystery",
+    captionBottom: "Sail silently above the depts of the North Atlantic",
+  },
 ];
