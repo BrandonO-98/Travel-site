@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import "./Footer.css";
 import footerData from "./footerData.js";
-import Button from "../Button.js";
+import Button from "./Button.js";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCompass} from "@fortawesome/free-solid-svg-icons";
 import {
@@ -11,6 +11,7 @@ import {
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import "../App.css";
 
 function Footer() {
   console.log(footerData);
@@ -20,8 +21,8 @@ function Footer() {
         <p className='subscription-text'>
           Join the Kazoo newsletter for all the latest updates
         </p>
-        <div className='subscription-input'>
-          <form>
+        <div className='subscription-input-container'>
+          <form className='subscription-form'>
             <input
               type='email'
               name='email'

@@ -12,6 +12,24 @@
   justify-items: center;
 }
 
+.subscription-input-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-input,
+.btn {
+  height: 50px;
+  margin: 0px;
+}
+
 p {
   color: white;
   font-size: x-large;
@@ -68,4 +86,14 @@ form {
   height: 25px;
   object-fit: cover;
   padding: 0px 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    height: auto;
+  }
+  .footer-links-container {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+  }
 }
